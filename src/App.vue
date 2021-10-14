@@ -2,8 +2,10 @@
   <div>
     <BaseLayout>
       <HomePage />
-      <BaseButton>Button</BaseButton>
-      <BaseButton :disable="true">Button Disabled</BaseButton>
+      <BaseButton :disable="false" color="primary">Button</BaseButton>
+      <BaseButton :disable="true" color="primary">Button Disabled</BaseButton>
+      <BaseButton :disable="false" color="warn">Button Warn Color</BaseButton>
+      <BaseButton :disable="false" color="danger">Button Danger Color</BaseButton>
     </BaseLayout>
     
   </div>
