@@ -78,7 +78,6 @@ button{
 #but_activate:hover{
     background-color: var(--background-color-hover);
     color: #2c3e50;
-    border: 2px solid #BADA55;
 }
 
 button:focus{
@@ -90,9 +89,8 @@ button:focus{
 }
 
 #but_disabled:hover{
-    background: white;
+    background-color: #688113;
     color: #2c3e50;
-    border: 2px solid #7a971a;
 }
 
 

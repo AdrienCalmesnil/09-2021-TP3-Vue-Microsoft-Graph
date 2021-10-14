@@ -6,6 +6,7 @@
       <BaseButton :disable="true" color="primary">Button Disabled</BaseButton>
       <BaseButton :disable="false" color="warn">Button Warn Color</BaseButton>
       <BaseButton :disable="false" color="danger">Button Danger Color</BaseButton>
+      <AsyncButton :disable="false" color="primary">AsyncButton</AsyncButton>
     </BaseLayout>
     
   </div>
@@ -15,13 +16,15 @@
 import HomePage from "./pages/HomePage.vue";
 import BaseLayout from "./components/BaseLayout.vue";
 import BaseButton from "./components/BaseButton.vue";
+import AsyncButton from "./components/AsyncButton.vue"
 
 export default {
   name: "App",
   components: {
     HomePage,
     BaseLayout,
-    BaseButton
+    BaseButton,
+    AsyncButton,
   },
 };
 </script>
