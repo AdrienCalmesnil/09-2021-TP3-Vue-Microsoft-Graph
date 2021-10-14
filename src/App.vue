@@ -2,19 +2,24 @@
   <div>
     <BaseLayout>
       <HomePage />
-    </BaseLayout>    
+      <BaseButton>Button</BaseButton>
+      <BaseButton :disable="true">Button Disabled</BaseButton>
+    </BaseLayout>
+    
   </div>
 </template>
 
 <script>
 import HomePage from "./pages/HomePage.vue";
-import BaseLayout from "./components/BaseLayout.vue"
+import BaseLayout from "./components/BaseLayout.vue";
+import BaseButton from "./components/BaseButton.vue";
 
 export default {
   name: "App",
   components: {
     HomePage,
     BaseLayout,
+    BaseButton
   },
 };
 </script>
