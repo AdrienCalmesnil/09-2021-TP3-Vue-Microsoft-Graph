@@ -1,6 +1,6 @@
 <template>
   <BaseButton :disabled="isDisabled" :color="color" @click.stop.prevent="handleClick"><slot></slot></BaseButton>
-  <p v-if="isDisabled" :icon="['fas', 'circle-notch']" pulse>Button disabled</p>
+  <p v-if="isDisabled">Button disabled fro the {{nbClick}} time</p>
 </template>
 
 <script>
@@ -21,6 +21,7 @@ export default {
   data () {
     return {
       isDisabled: false,
+      nbClick:0,
     }
   },
 
@@ -28,6 +29,7 @@ export default {
     handleClick () {
 
       var vm = this
+      vm.nbClick++
 
       function promise_button() {
         return new Promise((disable_button) => {
@@ -37,7 +39,7 @@ export default {
 
       function disable_button(){
         vm.isDisabled = true
-        setTimeout(() => vm.isDisabled = false, 2000)
+        setTimeout(() => vm.isDisabled = false, vm.nbClick*1000)
       }
 
       const promise_result = promise_button()
