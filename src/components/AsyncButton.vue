@@ -1,6 +1,6 @@
 <template>
   <BaseButton :disabled="isDisabled" :color="color" @click.stop.prevent="handleClick"><slot></slot></BaseButton>
-  <p v-if="isDisabled">Button disabled fro the {{nbClick}} time</p>
+  <p v-if="isDisabled">Button disabled {{nbClick}} times</p>
 </template>
 
 <script>

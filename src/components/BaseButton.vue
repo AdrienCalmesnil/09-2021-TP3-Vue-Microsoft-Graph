@@ -16,9 +16,9 @@ export default {
     },
     data(){
         const data = {
-           primary : {bg:"#4CAF50", hvbg:"#11770d", fcbg:"#40973d"},
-           warn : {bg:"#fd8700",hvbg:"#7c5408", fcbg:"#e6ab40"},
-           danger : {bg:"#fd0000",hvbg:"#a53737", fcbg:"#6b0000"} 
+           primary : {bg:"#50DB56", hvbg:"#8AE38E", fcbg:"#00EE0B"},
+           warn : {bg:"#FF5733",hvbg:"#FF6645", fcbg:"#FF7C60"},
+           danger : {bg:"#FF0000",hvbg:"#FF3E3E", fcbg:"#B20000"}
         };
         return {
             data
